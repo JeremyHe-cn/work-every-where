@@ -11,6 +11,10 @@
 " HotKey Settings  自定义快捷键设置
 "==========================================
 
+" Modify leader 修改leader键
+let mapleader=','
+let g:mapleader=','
+
 " F1 废弃这个键,防止调出系统帮助
 noremap <F1> <Esc>"				
 

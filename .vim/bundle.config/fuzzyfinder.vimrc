@@ -1,3 +1,3 @@
 Plugin 'vim-scripts/FuzzyFinder'
-map <Leader>ff :FufFile<CR>
+map <Leader>ff :FufFileWithCurrentBufferDir<CR>
 " map <Leader>fd :FufDir<CR>

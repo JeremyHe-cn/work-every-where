@@ -78,6 +78,7 @@ source ~/.vim/bundle.config/markdown.vimrc
 Plugin 'scrooloose/nerdcommenter'
 let NERDCreateDefaultMappings = 0
 map <Leader>c<space> <plug>NERDCommenterToggle
+map <D-/> <plug>NERDCommenterToggle
 
 " ############ SirVer/ultisnips	############## "
 "Plugin 'SirVer/ultisnips'

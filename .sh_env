@@ -7,7 +7,6 @@ export ANDROID_HOME=/Users/jeremyhe/Library/Android/sdk
 export ANDROID_NDK_HOME=/Users/jeremyhe/Library/Android/sdk/ndk-bundle
 export ANDROID_NDK_ROOT=$ANDROID_NDK_HOME
 export ANDROID_SDK_ROOT=$ANDROID_HOME
-export JDK_HOME=$JAVA_HOME
 
 export LCOV_HOME=~/Applications/lcov
 
@@ -21,6 +20,7 @@ else
 	# set default config
 	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112-release/Contents/Home
 fi
+export JDK_HOME=$JAVA_HOME
 
 export PATH=$PATH:~/.bin:$ANDROID_HOME/tools:$ANDROID_HOME/build-tools:$ANDROID_HOME/platform-tools:$ANDROID_NDK_HOME:$JAVA_HOME/bin:$LCOV_HOME/bin
 

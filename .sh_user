@@ -12,6 +12,7 @@ alias gitsh='gitcore'
 alias unix='date +%s'
 alias v='vim'
 alias gv='gvim'
+alias nv='nvim'
 
 # mac
 if [ $SYSTEM = "Darwin" ]; then
@@ -28,7 +29,8 @@ if [ `hostname` = "JeremydeiMac.local" ]; then
 	alias biossdk='j mmrdb && ./buildios.sh&& j mmrcore && ./buildios.sh'
 	alias bosxsdk='j mmrdb && ./buildosx.sh&& j mmrcore && ./buildosx.sh'
 	alias gitcore='cd $MMR_DEV_ROOT/ProjectManagement/script/devscript/gitscript'
-	alias lg44='ssh androidrb@192.168.1.44'
-	alias lg18='ssh server1@192.168.1.18'
+	alias lg41='ssh gitsrv@192.168.1.41'
+	alias lgrelease='ssh androidrb@192.168.1.44'
+	alias lghttp='ssh server1@192.168.1.200'
 	alias lg8'ssh androiddev@192.168.1.8'
 fi

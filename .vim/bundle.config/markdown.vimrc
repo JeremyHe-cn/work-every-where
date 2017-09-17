@@ -18,7 +18,7 @@ au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} imap <F9> <ESC>:Toc<CR
 " let g:table_mode_delimiter = '  '
 
 " 实时预览
-Plugin 'suan/vim-instant-markdown'
+"Plugin 'suan/vim-instant-markdown'
 " 需要先安装 sudo npm -g install instant-markdown-d
 
 " Plugin 'iamcco/markdown-preview.vim'

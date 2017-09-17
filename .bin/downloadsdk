@@ -3,7 +3,7 @@ if [ ! $1 ]; then
 	echo "usage: downloadsdk 3.9.0"
 	exit 0;
 fi
-wget -r -np -nH -P ./temp http://192.168.1.18/sdk/$1
+wget -r -np -nH -P ./temp "http://192.168.1.200/sdk/$1"
 find ./temp -name 'index.html*' | xargs rm 
 if [ -d $MMR_DEV_ROOT/sdk.bak ];then
 	rm -rf $MMR_DEV_ROOT/sdk.bak
