@@ -13,6 +13,8 @@ export LCOV_HOME=~/Applications/lcov
 
 export DYLD_FRAMEWORK_PATH=$QT_HOME/clang_64/lib
 
+export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/'
+
 if [ `hostname` = 'JeremydeMacBook-Pro.local' ]; then
 	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home
 else
