@@ -428,3 +428,4 @@ bin/verify.sh
 .mysql_history
 .oni
 token
+.LfCache

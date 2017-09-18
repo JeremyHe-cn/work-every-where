@@ -2,8 +2,8 @@
 " Author:  JeremyHe
 " Version: 1.0
 " Email: jeremyhe.cn@gmail.com
-" Blog: http://www.zlv.me
-" Last_modify: 2016-11-20 18:36 
+" Blog: http://www.alzz.me
+" Last_modify: 2017-09-08 18:06   
 " Description: Vundle插件管理配置文件
 " Sections:
 "       -> Enable Vundle 启用Vundle插件
@@ -36,7 +36,10 @@ source ~/.vim/bundle.config/ycm.vimrc
 source ~/.vim/bundle.config/ctrlp.vimrc
 
 " ############# FuzzyFinder #########
-source ~/.vim/bundle.config/fuzzyfinder.vimrc
+"source ~/.vim/bundle.config/fuzzyfinder.vimrc
+
+" ###### LeaderF ###########
+Plugin 'Yggdroot/LeaderF'
 
 " ########## airline 状态栏增强 ########
 source ~/.vim/bundle.config/airline.vimrc
