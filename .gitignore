@@ -429,3 +429,10 @@ bin/verify.sh
 .oni
 token
 .LfCache
+.cocoapods
+.jack-*
+.python*
+.wns/
+PycharmProjects/
+queryTrans.sh
+

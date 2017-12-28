@@ -11,11 +11,12 @@ if [ debug ]; then
 fi
 
 dbFileName=jinchuhuobook.bdb
+adb shell rm $avdDbDir/$dbFileName
 adb  push ./$dbFileName $avdDbDir/$dbFileName
 
 owner=`adb  shell ls -l $avdDbDir/sync | awk '{print $2}'`
 adb  shell chown $owner:$owner $avdDbDir/$dbFileName
-adb  shell chmod 777 $avdDbDir/$dbFileName
+adb  shell chmod 600 $avdDbDir/$dbFileName
 
 echo "result:"
 adb  shell ls -l $avdDbDir

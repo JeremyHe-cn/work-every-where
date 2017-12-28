@@ -128,9 +128,10 @@ set autoindent    			" 打开自动缩进
 " tab settings tab相关变更
 set tabstop=4     		" 设置Tab键的宽度
 set shiftwidth=4  		" 每一次缩进对应的空格数
-set softtabstop=4 		" 按退格键时可以一次删掉 4 个空格
 set smarttab      			" insert tabs on the start of a line according to shiftwidth, not tabstop
-set noexpandtab				" 不要用空格代替制表符
+set softtabstop=4 		" 按退格键时可以一次删掉 4 个空格
+"set noexpandtab			" 不要用空格代替制表符 执行:%retab可进行替换
+set expandtab				" 用空格代替制表符
 set shiftround    			" 缩进时，取整 use multiple of shiftwidth when indenting with '<' and '>'
 
 
@@ -208,8 +209,12 @@ function! AutoSetFileHead()
     if &filetype == 'python'
         call setline(1, "\#!/usr/bin/env python")
         call append(1, "\# encoding: utf-8")
+		call append(1+2, "####################################################")
+		call append(1+3, "#  File Name: ".expand("%"))
+		call append(1+4, "#  Author: JeremyHe")
+		call append(1+5, "#  Email: jeremyhe.cn@gmail.com")
+		call append(1+6, "#####################################################")
     endif
-    
     
     " Add Author Info 添加作者信息
     if &filetype == 'sh' 
@@ -222,19 +227,9 @@ function! AutoSetFileHead()
 		call append(line(".")+6, "\# Created Time: ".strftime("%c"))
 		call append(line(".")+7, "\# Descripteion: ")
 		call append(line(".")+8, "\#########################################################################")
-	else 
-		call append(line("."), "")
-		call append(line(".")+1, "")
-		call append(line(".")+2, "/*************************************************************************")
-		call append(line(".")+3, "   File Name: ".expand("%"))
-		call append(line(".")+4, "   Author: JeremyHe")
-		call append(line(".")+5, "   Email: jeremyhe.cn@gmail.com")
-		call append(line(".")+6, "   Created Time: ".strftime("%c"))
-		call append(line(".")+7, " ************************************************************************/")
 	endif
 
     normal G
-    normal o
     normal o
 endfunc
 

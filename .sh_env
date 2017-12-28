@@ -18,7 +18,8 @@ if [ `hostname` = 'JeremydeMacBook-Pro.local' ]; then
 	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home
 else
 	# set default config
-	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112-release/Contents/Home
+	# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112-release/Contents/Home
+	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
 fi
 export JDK_HOME=$JAVA_HOME
 

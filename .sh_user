@@ -13,6 +13,11 @@ alias unix='date +%s'
 alias v='vim'
 alias gv='gvim'
 alias nv='nvim'
+alias remount_sys='adb shell mount -o rw,remount,rw /system'
+alias push_bootanimation='adb push ./bootanimation.zip /data/local/ && adb shell chmod 777 /data/local/bootanimation.zip && adb shell ls -al /data/local'
+alias modify_density="adb pull /system/build.prop ./ && sed -i '' 's/ro.sf.lcd_density=160/ro.sf.lcd_density=213/' build.prop && adb push build.prop /system/build.prop && adb shell chmod 644 /system/build.prop && adb shell ls -al /system/ && adb shell cat /system/build.prop && rm ./build.prop && adb shell chmod 644 /system/build.prop"
+alias push_launcher='adb push Launcher.apk /system/app/Launcher/Launcher.apk && adb shell rm -rf /system/app/Launcher3'
+alias push_launcher_apk='adb push Launcher.apk /system/app/Launcher.apk && adb shell chmod 644 /system/app/Launcher.apk && adb shell rm -rf /system/app/Launcher3.apk'
 
 # mac
 if [ $SYSTEM = "Darwin" ]; then
