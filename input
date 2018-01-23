@@ -1,0 +1,8 @@
+#!/bin/sh
+adb shell input text "$1"
+adb shell input keyevent 61
+adb shell input text "$2"
+adb shell input keyevent 61
+adb shell input text "$2"
+adb shell input keyevent 61
+adb shell input text "$3"
