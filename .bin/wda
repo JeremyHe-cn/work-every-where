@@ -1,0 +1,7 @@
+# 代理端口
+# iproxy 8100 8100
+# 获取设备的UDID
+UDID=$(idevice_id -l | head -n1)
+
+# 运行测试
+xcodebuild -project ~/Workspace/WebDriverAgent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination "id=$UDID" test

@@ -19,6 +19,8 @@ alias modify_density="adb pull /system/build.prop ./ && sed -i '' 's/ro.sf.lcd_d
 alias push_launcher='adb push Launcher.apk /system/app/Launcher/Launcher.apk && adb shell rm -rf /system/app/Launcher3'
 alias push_launcher_apk='adb push Launcher.apk /system/app/Launcher.apk && adb shell chmod 644 /system/app/Launcher.apk && adb shell rm -rf /system/app/Launcher3.apk'
 alias put='adb shell input text'
+alias gitproxyon="git config --global http.proxy socks5://127.0.0.1:1080 && git config --global https.proxy socks5://127.0.0.1:1080"
+alias gitproxyoff="git config --global http.proxy '' && git config --global https.proxy ''"
 
 # mac
 if [ $SYSTEM = "Darwin" ]; then
