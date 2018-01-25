@@ -1,9 +1,8 @@
 "==========================================
 " Author:  JeremyHe
-" Version: 2.0
 " Email: jeremyhe.cn@gmail.com
-" Blog: http://www.zlv.me
-" Last_modify: 2016-11-20 21:36 
+" Blog: http://www.alzz.me
+" Last_modify: 2018-01-25 17:27   
 " Description: 独立出快捷键的设置
 "==========================================
 
@@ -23,22 +22,6 @@ map <F5> :call RunCompile()<CR>
 
 " F12 缩进，格式化代码
 map <F12> gg=G					
-
-func! RunCompile()
-	exec "w"
-	if &filetype == 'c'
-		exec "!g++ % -o %<"
-		exec "! ./%<"
-	elseif &filetype == 'cpp'
-		exec "!g++ % -o %<"
-		exec "! ./%<"
-	elseif &filetype == 'java' 
-		exec "!javac %" 
-		exec "!java %<"
-	elseif &filetype == 'sh'
-		:!./%
-	endif
-endfunc
 
 ",ee 快速打开配置文件
 map <silent> <leader>ee :e ~/.vimrc<cr>	
@@ -60,9 +43,6 @@ imap <C-v> <Esc>"+p<Esc>a
 vmap p "_xp
 " map 空格 为 " ，方便使用寄存器
 map <space> "
-
-"插入模式下Ctrl+B插入<br>
-imap <C-b> <br>
 
 "插入模式下Ctrl+h,j,k,l为方向
 imap <C-h> <Esc>ha
@@ -144,3 +124,16 @@ ab fp; <c-r>=expand('%:p')<cr>
 " flow
 ab o; =>operation:
 imap <C-o> <Esc>ao; 
+
+" Markdown
+"" 加粗
+vmap <C-b> s**<Esc>pa**
+"" 斜体
+vmap <C-i> s*<Esc>pa*
+"" 变成链接
+vmap <C-u> s[<Esc>pa]()<Esc>i
+"" 换行
+imap <C-b> <br>
+"" code
+vmap ` s`<Esc>pa`
+

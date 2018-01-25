@@ -30,3 +30,21 @@ func! GetWeekDiff()
 	let w = strftime('%w')
 	return (w-1+7)%7
 endfunc
+
+" 编译
+func! RunCompile()
+	exec "w"
+	if &filetype == 'c'
+		exec "!g++ % -o %<"
+		exec "! ./%<"
+	elseif &filetype == 'cpp'
+		exec "!g++ % -o %<"
+		exec "! ./%<"
+	elseif &filetype == 'java' 
+		exec "!javac %" 
+		exec "!java %<"
+	elseif &filetype == 'sh'
+		:!./%
+	endif
+endfunc
+ 

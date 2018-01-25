@@ -36,10 +36,10 @@ source ~/.vim/bundle.config/ycm.vimrc
 source ~/.vim/bundle.config/ctrlp.vimrc
 
 " ############# FuzzyFinder #########
-"source ~/.vim/bundle.config/fuzzyfinder.vimrc
+source ~/.vim/bundle.config/fuzzyfinder.vimrc
 
 " ###### LeaderF ###########
-Plugin 'Yggdroot/LeaderF'
+"Plugin 'Yggdroot/LeaderF'
 
 " ########## airline 状态栏增强 ########
 source ~/.vim/bundle.config/airline.vimrc
