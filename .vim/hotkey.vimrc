@@ -134,7 +134,8 @@ vmap <C-i> s*<Esc>pa*
 "" 变成链接
 vmap <C-u> s[<Esc>pa]()<Esc>i
 "" 换行
-imap <C-b> <br>
+imap <C-b> <br/>
+imap <S-CR> <Esc>a  <CR>
 "" code
 vmap ` s`<Esc>pa`
 
