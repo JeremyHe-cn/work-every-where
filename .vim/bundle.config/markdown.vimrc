@@ -13,8 +13,8 @@ au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} nmap <F9> :Toc<CR>
 au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} imap <F9> <ESC>:Toc<CR>
 
 " ######### markdown table support ###########
-" Plugin 'dhruvasagar/vim-table-mode'
-" let g:table_mode_corner = '|'
+Plugin 'dhruvasagar/vim-table-mode'
+let g:table_mode_corner = '|'
 " let g:table_mode_delimiter = '  '
 
 " 实时预览
