@@ -1,3 +1,9 @@
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git osx autojump copydir adb vi-mode iterm2)
+
 SYSTEM=`uname -s`
 
 # alias
@@ -42,3 +48,14 @@ if [ `hostname` = "JeremydeiMac.local" ]; then
 	alias lghttp='ssh server1@192.168.1.200'
 	alias lg8'ssh androiddev@192.168.1.8'
 fi
+
+# vim 模式
+bindkey -v
+# 按 jj 返回 Normal 模式
+bindkey -M viins 'jj' vi-cmd-mode
+bindkey -M viins 'HH' beginning-of-line
+bindkey -M viins 'LL' end-of-line
+#bindkey -M viins 'ff' vi-cmd-mode f
+
+bindkey -M vicmd 'H' beginning-of-line
+bindkey -M vicmd 'L' end-of-line
