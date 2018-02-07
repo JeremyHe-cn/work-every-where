@@ -2,7 +2,7 @@
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx autojump copydir adb vi-mode iterm2)
+plugins=(git osx autojump copydir adb)
 
 SYSTEM=`uname -s`
 
@@ -50,12 +50,12 @@ if [ `hostname` = "JeremydeiMac.local" ]; then
 fi
 
 # vim 模式
-bindkey -v
+#bindkey -v
 # 按 jj 返回 Normal 模式
-bindkey -M viins 'jj' vi-cmd-mode
-bindkey -M viins 'HH' beginning-of-line
-bindkey -M viins 'LL' end-of-line
+#bindkey -M viins 'jj' vi-cmd-mode
+#bindkey -M viins 'HH' beginning-of-line
+#bindkey -M viins 'LL' end-of-line
 #bindkey -M viins 'ff' vi-cmd-mode f
 
-bindkey -M vicmd 'H' beginning-of-line
-bindkey -M vicmd 'L' end-of-line
+#bindkey -M vicmd 'H' beginning-of-line
+#bindkey -M vicmd 'L' end-of-line
