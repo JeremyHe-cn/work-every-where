@@ -440,3 +440,10 @@ queryTrans.sh
 .gemrc
 .python*
 .wns
+.cups
+.eclipse
+.jssc
+.p2
+.platformio
+.vscode
+.bin/ngrok

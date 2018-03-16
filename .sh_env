@@ -22,6 +22,6 @@ else
 	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
 fi
 export JDK_HOME=$JAVA_HOME
-
 export PATH=$PATH:~/.bin:$ANDROID_HOME/tools:$ANDROID_HOME/build-tools:$ANDROID_HOME/platform-tools:$ANDROID_NDK_HOME:$JAVA_HOME/bin:$LCOV_HOME/bin
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
