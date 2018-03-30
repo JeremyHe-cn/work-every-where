@@ -439,6 +439,8 @@ queryTrans.sh
 .gemrc
 .python*
 .wns
+Parallels
+data
 .cups
 .eclipse
 .jssc
