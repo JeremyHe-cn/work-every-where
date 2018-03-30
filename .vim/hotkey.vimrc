@@ -16,9 +16,7 @@ let g:mapleader=','
 
 " F1 废弃这个键,防止调出系统帮助
 noremap <F1> <Esc>"				
-vnoremap jk <Esc>
-inoremap jk <Esc>
-inoremap jj <Esc>
+inoremap gg <Esc>
 inoremap JJ <Esc>
 
 " F5 执行或编译
@@ -80,7 +78,7 @@ vnoremap H ^
 nnoremap L $
 vnoremap L $
 imap HH <Esc>I
-imap LL <Esc>A
+" imap LL <Esc>A conflict with NULL
 
 " 分号快速进入命令模式
 nnoremap ; :
