@@ -1,0 +1,15 @@
+source ~/.vim/hotkey.vimrc
+#set ic
+set keep-english-in-normal
+
+" Press `f` to activate AceJump
+"nmap f :action AceAction<CR>
+" Press `F` to activate Target Mode
+"nmap F :action AceTargetAction<CR>
+" Press `g` to activate Line Mode
+"nmap g :action AceLineAction<CR>
+
+nmap f :action KJumpAction<CR>
+
+" Enter -> o
+nmap <CR> o
