@@ -52,7 +52,10 @@ if [ `hostname` = "JeremydeiMac.local" ]; then
     alias flash_bin1='esptool.py --port /dev/tty.usbserial-AH069HB1 --baud 115200 write_flash --flash_size 4MB --flash_mode qio 0x0 $BIN_PATH/boot_v1.7.bin 0x1000 $BIN_PATH/upgrade/user1.4096.new.4.bin 0x3FB000 $BIN_PATH/blank.bin 0x3FC000 $BIN_PATH/esp_init_data_default.bin 0x3FE000 $BIN_PATH/blank.bin'
     alias flash_bin2='esptool.py --port /dev/tty.usbserial-AH069HB1 --baud 115200 write_flash --flash_size 4MB --flash_mode qio 0x0 $BIN_PATH/boot_v1.7.bin 0x1000 $BIN_PATH/upgrade/user2.4096.new.4.bin 0x3FB000 $BIN_PATH/blank.bin 0x3FC000 $BIN_PATH/esp_init_data_default.bin 0x3FE000 $BIN_PATH/blank.bin'
     alias flash_4m-c1='esptool.py --port /dev/tty.usbserial-AH069HB1 --baud 115200 write_flash --flash_size 4MB-c1 --flash_mode qio 0x0 $BIN_PATH/boot_v1.7.bin 0x1000 $BIN_PATH/upgrade/user1.4096.new.6.bin 0x3FB000 $BIN_PATH/blank.bin 0x3FC000 $BIN_PATH/esp_init_data_default.bin 0x3FE000 $BIN_PATH/blank.bin'
+    alias flash_4m='esptool.py --port /dev/tty.usbserial-AH069HB1 --baud 115200 write_flash --flash_size 4MB-c1 --flash_mode qio 0x0 $BIN_PATH/boot_v1.7.bin 0x1000 $BIN_PATH/upgrade/user1.4096.new.6.bin'
     alias flash_4m-c1-2='esptool.py --port /dev/tty.usbserial-AH069HB1 --baud 115200 write_flash --flash_size 4MB-c1 --flash_mode qio 0x0 $BIN_PATH/boot_v1.7.bin 0x101000 $BIN_PATH/upgrade/user1.4096.new.6.bin 0x3FB000 $BIN_PATH/blank.bin 0x3FC000 $BIN_PATH/esp_init_data_default.bin 0x3FE000 $BIN_PATH/blank.bin'
+    alias flash_2m-c1='esptool.py --port /dev/cu.usbserial-AO002IUB --baud 115200 write_flash --flash_size 2MB-c1 --flash_mode qio 0x0 $BIN_PATH/boot_v1.7.bin 0x1000 $BIN_PATH/upgrade/user1.2048.new.5.bin 0x1FB000 $BIN_PATH/blank.bin 0x1FC000 $BIN_PATH/esp_init_data_default.bin 0x1FE000 $BIN_PATH/blank.bin'
+    alias cpbin='cp /Users/jeremyhe/Workspace/ESP8266/ESP8266_RTOS_SDK/bin/upgrade/user1.4096.new.6.bin /Volumes/release/'
 fi
 
 # vim 模式

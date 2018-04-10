@@ -13,3 +13,4 @@ nmap f :action KJumpAction<CR>
 
 " Enter -> o
 nmap <CR> o
+unmap <S-CR>
