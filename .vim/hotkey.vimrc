@@ -16,8 +16,8 @@ let g:mapleader=','
 
 " F1 废弃这个键,防止调出系统帮助
 noremap <F1> <Esc>"				
-inoremap gg <Esc>
-inoremap JJ <Esc>
+" inoremap gg <Esc>
+" inoremap JJ <Esc>
 
 " F5 执行或编译
 map <F5> :call RunCompile()<CR>	
