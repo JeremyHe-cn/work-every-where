@@ -448,3 +448,4 @@ data
 .platformio
 .vscode
 .bin/ngrok
+.fir*
