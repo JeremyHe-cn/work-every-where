@@ -1,6 +1,4 @@
 source ~/.vim/hotkey.vimrc
-#set ic
-set keep-english-in-normal
 
 " Press `f` to activate AceJump
 "nmap f :action AceAction<CR>
