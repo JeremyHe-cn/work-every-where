@@ -1,0 +1,31 @@
+" Modify leader 修改leader键
+let mapleader=','
+let g:mapleader=','
+
+nnoremap H ^
+vnoremap H ^
+nnoremap L $
+vnoremap L $
+
+" normal模式下切换到确切的tab
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+
+" 添加时间
+nnoremap <C-d> "=strftime("%F %T")<CR>gP
+inoremap <C-d> <C-R>=strftime("%F %T")<CR>
+ab d; <c-r>=strftime('%Y-%m-%d %H:%M')<cr> 
+ab d-; <c-r>=strftime('%Y-%m-%d')<cr> 
+ab d/; <c-r>=strftime('%Y/%m/%d')<cr> 
+ab ww; <c-r>=GetWorkDateRange()<cr> 
+
+" Enter -> o
+"nmap <CR> o
+"unmap <S-CR>
