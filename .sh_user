@@ -27,6 +27,7 @@ alias push_launcher_apk='adb push Launcher.apk /system/app/Launcher.apk && adb s
 alias put='adb -e shell input text'
 alias gitproxyon="git config --global http.proxy socks5://127.0.0.1:1080 && git config --global https.proxy socks5://127.0.0.1:1080"
 alias gitproxyoff="git config --global http.proxy '' && git config --global https.proxy ''"
+alias firp='fir p -T 0efe1283421b8c3fa48fe347e6953c35'
 
 # mac
 if [ $SYSTEM = "Darwin" ]; then

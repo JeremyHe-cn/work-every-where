@@ -450,3 +450,4 @@ data
 .bin/ngrok
 .dartServer/
 .flutter
+.fir*
