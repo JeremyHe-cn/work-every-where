@@ -451,3 +451,5 @@ data
 .dartServer/
 .flutter
 .fir*
+.stm*
+STM*

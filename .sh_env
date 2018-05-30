@@ -23,13 +23,13 @@ else
 	# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112-release/Contents/Home
 	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
     export MMR_DEV_ROOT=~/Workspace
+
+    # esp8266
+    export SDK_PATH=/Users/jeremyhe/Workspace/cakechip/ESP8266/ESP8266_RTOS_SDK
+    export IDF_PATH=/Users/jeremyhe/Workspace/cakechip/ESP8266/ESP8266_RTOS_SDK
+    export BIN_PATH=/Users/jeremyhe/Workspace/cakechip/ESP8266/ESP8266_RTOS_SDK/bin
 fi
+
 export JDK_HOME=$JAVA_HOME
 export PATH=$PATH:~/.bin:$ANDROID_HOME/tools:$ANDROID_HOME/build-tools:$ANDROID_HOME/platform-tools:$ANDROID_NDK_HOME:$JAVA_HOME/bin:$LCOV_HOME/bin:$FLUTTER_PATH
 
-#export SDK_PATH=/Users/jeremyhe/Workspace/ESP8266/ESP8266_RTOS_SDK
-#export IDF_PATH=/Users/jeremyhe/Workspace/ESP8266/ESP8266_RTOS_SDK
-#export BIN_PATH=/Users/jeremyhe/Workspace/ESP8266/ESP8266_RTOS_SDK/bin
-#export TOOLCHAIN_PATH=/Users/jeremyhe/.platformio/packages/toolchain-xtensa/bin
-#export PATH="$TOOLCHAIN_PATH:$PATH"
-#export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
