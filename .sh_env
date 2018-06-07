@@ -18,6 +18,11 @@ export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/'
 if [ `hostname` = 'JeremydeMacBook-Pro.local' ]; then
 	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home
     export MMR_DEV_ROOT=~/Workspace/MMR
+
+    # esp8266
+    export SDK_PATH=/Users/jeremyhe/Workspace/cakechip/ESP8266_RTOS_SDK
+    export IDF_PATH=$SDK_PATH
+    export BIN_PATH=$SDK_PATH/bin
 else
 	# set default config
 	# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112-release/Contents/Home
