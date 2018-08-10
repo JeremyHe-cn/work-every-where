@@ -33,6 +33,7 @@ alias firp='fir p -T 0efe1283421b8c3fa48fe347e6953c35'
 if [ $SYSTEM = "Darwin" ]; then
 	alias gvim='mvim'
 	alias o='open .'
+    alias lsusb='system_profiler SPUSBDataType'
 fi
 
 alias flash_2m-c1='esptool.py --port /dev/cu.usbserial-AO002IUB --baud 115200 write_flash --flash_size 2MB-c1 --flash_mode qio 0x0 $BIN_PATH/boot_v1.7.bin 0x1000 $BIN_PATH/upgrade/user1.2048.new.5.bin 0x1FB000 $BIN_PATH/blank.bin 0x1FC000 $BIN_PATH/esp_init_data_default.bin 0x1FE000 $BIN_PATH/blank.bin'
