@@ -15,8 +15,14 @@ export DYLD_FRAMEWORK_PATH=$QT_HOME/clang_64/lib
 
 export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/'
 
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/using.jdk/Contents/Home
+export JDK_HOME=$JAVA_HOME
+
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+
+export MACVIM_HOME=/Applications/MacVim.app/Contents
+
 if [ `hostname` = 'JeremydeMacBook-Pro.local' ]; then
-	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home
     export MMR_DEV_ROOT=~/Workspace/MMR
 
     # esp8266
@@ -25,8 +31,6 @@ if [ `hostname` = 'JeremydeMacBook-Pro.local' ]; then
     export BIN_PATH=$SDK_PATH/bin
 else
 	# set default config
-	# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112-release/Contents/Home
-	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
     export MMR_DEV_ROOT=~/Workspace
 
     # esp8266
@@ -36,6 +40,5 @@ else
     export TOOLCHAIN_PATH=/Users/jeremyhe/Documents/ESP8266/xtensa-lx106-elf
 fi
 
-export JDK_HOME=$JAVA_HOME
-export PATH=$PATH:~/.bin:$ANDROID_HOME/tools:$ANDROID_HOME/build-tools:$ANDROID_HOME/platform-tools:$ANDROID_NDK_HOME:$JAVA_HOME/bin:$LCOV_HOME/bin:$FLUTTER_PATH:$TOOLCHAIN_PATH/bin
+export PATH=$PATH:~/.bin:$ANDROID_HOME/tools:$ANDROID_HOME/build-tools:$ANDROID_HOME/platform-tools:$ANDROID_NDK_HOME:$JAVA_HOME/bin:$LCOV_HOME/bin:$FLUTTER_PATH:$TOOLCHAIN_PATH/bin:$MACVIM_HOME/bin
 

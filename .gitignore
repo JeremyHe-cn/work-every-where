@@ -456,3 +456,4 @@ STM*
 Applications\ (Parallels)
 .putty
 .itmstra*
+!.gradle/init.gradle
