@@ -457,3 +457,10 @@ Applications\ (Parallels)
 .putty
 .itmstra*
 !.gradle/init.gradle
+.cnpmrc
+.gnu*
+.mail*
+.mime*
+.npm*
+.wget*
+network

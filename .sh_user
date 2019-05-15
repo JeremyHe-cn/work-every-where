@@ -61,6 +61,9 @@ if [ `hostname` = "JeremydeiMac.local" ]; then
     alias cpbin_2m='cp /Users/jeremyhe/Workspace/ESP8266/ESP8266_RTOS_SDK/bin/upgrade/user1.2048.new.5.bin /Volumes/release/'
 fi
 
+alias 6t='adb -s d82c9a04'
+alias onep='adb -s 8a3177ea'
+
 # vim 模式
 #bindkey -v
 # 按 jj 返回 Normal 模式
