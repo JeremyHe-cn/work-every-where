@@ -47,10 +47,10 @@ vmap p "_xp
 map <space> "
 
 "插入模式下Ctrl+h,j,k,l为方向
-imap <C-h> <Esc>ha
-imap <C-j> <Esc>ja
-imap <C-k> <Esc>ka
-imap <C-l> <Esc>la
+imap <C-h> <Esc>I
+imap <C-j> <Esc>G
+imap <C-k> <Esc>gg
+imap <C-l> <Esc>A
 
 "Ctrl+g为取消,类似Emacs
 imap <C-g> <Esc>
@@ -77,7 +77,7 @@ nnoremap H ^
 vnoremap H ^
 nnoremap L $
 vnoremap L $
-imap HH <Esc>I
+"imap HH <Esc>I
 " imap LL <Esc>A conflict with NULL
 
 " 分号快速进入命令模式

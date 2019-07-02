@@ -464,3 +464,4 @@ Applications\ (Parallels)
 .npm*
 .wget*
 network
+.bin/input*

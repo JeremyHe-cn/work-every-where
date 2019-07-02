@@ -34,6 +34,8 @@ alias gitproxyoff="git config --global http.proxy '' && git config --global http
 
 alias firp='fir p -T 0efe1283421b8c3fa48fe347e6953c35'
 
+alias refreshDep='./gradlew  build --refresh-dependencies'
+
 # mac
 if [ $SYSTEM = "Darwin" ]; then
 	#alias gvim='mvim'
