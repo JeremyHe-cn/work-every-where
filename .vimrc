@@ -255,7 +255,7 @@ hi link EasyMotionShade Comment
 " Function 一些有用的函数
 "==========================================
 if filereadable(expand("~/.vim/func.vimrc"))
-	source ~/.vim/func.vimrc
+    source ~/.vim/func.vimrc
 endif
 
 

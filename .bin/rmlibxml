@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+#########################################################################
+# File Name: /Users/jeremyhe/.bin/rmlibxml.sh
+# Author: JeremyHe
+# Email: alvminvm@qq.com
+# Created Time: 四  7/ 4 13:48:58 2019
+# Descripteion: 
+#########################################################################
+xml=`ls .idea/libraries | grep $1`
+echo $xml
+rm ./.idea/libraries/$xml
