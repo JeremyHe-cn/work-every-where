@@ -66,6 +66,10 @@ fi
 alias 6t='adb -s d82c9a04'
 alias onep='adb -s 8a3177ea'
 
+# ndk
+alias addr2line64='$ANDROID_NDK_HOME/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/bin/aarch64-linux-android-addr2line -C -f -e'
+alias addr2line='$ANDROID_NDK_HOME/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-addr2line -C -f -e'
+
 # vim 模式
 #bindkey -v
 # 按 jj 返回 Normal 模式

@@ -2,22 +2,16 @@
 SYSTEM=`uname`
 ROOT_DIR=`pwd`
 
-copy_git(){
-	cd ~
-	home_dir=`pwd`
-	if [ "$ROOT_DIR" == "$home_dir" ]; then
-		return 0;
-	fi
-	echo ">>> copy work-every-where to $HOME"
-	sudo cp -R ./ ~/
-
+install_brew(){
 	if type brew >/dev/null 2>&1; then
 		echo "brew has installed"
 	else
 		echo ">>> install homebrew"
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	fi
+}
 
+install_wget(){
 	if type wget >/dev/null 2>&1; then
 		echo ">>> wget has installed"
 	else
@@ -71,6 +65,17 @@ install_sh_user(){
 	fi
 }
 
+install_localrc(){
+    localrc=".`hostname`.sh"
+	has_localrc=`cat ~/.zshrc | grep $localrc`
+	if [ ! "$has_localrc" ]; then
+		echo ">>> config localrc"
+		echo "" >> ~/.zshrc
+		echo "# source $localrc" >> ~/.zshrc
+		echo "test -e ~/$localrc && source ~/$localrc" >> ~/.zshrc
+	fi
+}
+
 install_shell_integration(){
 	has_iterm2=`cat ~/.zshrc | grep iterm2`
 	if [ ! "$has_iterm2" ]; then
@@ -118,30 +123,6 @@ config_vim(){
 	cd $ROOT_DIR
 }
 
-setup_zlv_me(){
-	if -d ~/zlv.me; then
-		echo ">>> zlv.me has setup"
-		return;
-	fi
-	
-	echo ""
-	echo ">>> setup zlv.me"
-	git clone git@github.com:JeremyHe-cn/JeremyHe-cn.github.io.git -b source-hexo ~/Zlv.me
-	if ! type npm >dev/null 2>&1; then
-		echo ">>> install npm: https://nodejs.org/en/"
-		exit 1;
-	fi
-
-	cd ~/Zlv.me
-	npm install hexo-cli -g
-	npm install	
-	if [ ! -d ./themes ]; then 
-		mkdir themes
-	fi
-	npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
-	git clone git@github.com:JeremyHe-cn/hexo-theme-apollo.git themes/apollo
-}
-
 # main
 read -p "Enter ur name(JeremyHe): " username
 if [ ! "$username" ]; then
@@ -154,12 +135,12 @@ if [ ! "$email" ]; then
 fi
 
 sudo echo ">> start install"
-copy_git;
+install_brew;
+install_wget;
 install_sh_user;
 install_shell_integration;
 config_git;
 config_vim;
-setup_zlv_me;
 echo ">> install finish"
 
 

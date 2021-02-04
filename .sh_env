@@ -1,44 +1,24 @@
+# java
+export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home
+export JDK_HOME=$JAVA_HOME
+export CLASS_PATH="$JAVA_HOME/lib"
 
-export QT_HOME=/Users/jeremyhe/Qt5.7.0/5.7
-
+# android
 export ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_NDK_HOME=$ANDROID_HOME/ndk-bundle
 export ANDROID_NDK_ROOT=$ANDROID_NDK_HOME
 export ANDROID_SDK_ROOT=$ANDROID_HOME
-
-export FLUTTER_HOME=~/Library/flutter
-export FLUTTER_PATH=$FLUTTER_HOME/bin
-
-export LCOV_HOME=~/Applications/lcov
-
-export DYLD_FRAMEWORK_PATH=$QT_HOME/clang_64/lib
-
 export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/'
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/using.jdk/Contents/Home
-export JDK_HOME=$JAVA_HOME
+# flutter
+export FLUTTER_HOME=~/Library/flutter
+export FLUTTER_PATH=$FLUTTER_HOME/bin
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
+# osx
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
-
 export MACVIM_HOME=/Applications/MacVim.app/Contents
 
-if [ `hostname` = 'JeremydeMacBook-Pro.local' ]; then
-    export MMR_DEV_ROOT=~/Workspace/MMR
-
-    # esp8266
-    export SDK_PATH=/Users/jeremyhe/Workspace/cakechip/ESP8266_RTOS_SDK
-    export IDF_PATH=$SDK_PATH
-    export BIN_PATH=$SDK_PATH/bin
-else
-	# set default config
-    export MMR_DEV_ROOT=~/Workspace
-
-    # esp8266
-    export SDK_PATH=/Users/jeremyhe/Workspace/cakechip/ESP8266/ESP8266_RTOS_SDK
-    export IDF_PATH=/Users/jeremyhe/Workspace/cakechip/ESP8266/ESP8266_RTOS_SDK
-    export BIN_PATH=/Users/jeremyhe/Workspace/cakechip/ESP8266/ESP8266_RTOS_SDK/bin
-    export TOOLCHAIN_PATH=/Users/jeremyhe/Documents/ESP8266/xtensa-lx106-elf
-fi
-
-export PATH=$PATH:~/.bin:$ANDROID_HOME/tools:$ANDROID_HOME/build-tools:$ANDROID_HOME/platform-tools:$ANDROID_NDK_HOME:$JAVA_HOME/bin:$LCOV_HOME/bin:$FLUTTER_PATH:$TOOLCHAIN_PATH/bin:$MACVIM_HOME/bin
+export PATH=$PATH:~/.bin:$ANDROID_HOME/tools:$ANDROID_HOME/build-tools:$ANDROID_HOME/platform-tools:$ANDROID_NDK_HOME:$JAVA_HOME/bin:$FLUTTER_PATH:$TOOLCHAIN_PATH/bin:$MACVIM_HOME/bin
 
